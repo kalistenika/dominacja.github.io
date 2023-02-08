@@ -1,90 +1,9 @@
-<!-- Smartsupp Live Chat script -->
-<script type="text/javascript">
-var _smartsupp = _smartsupp || {};
-_smartsupp.key = '38deed37086a68651eebbda2ae0e59cf2545c6c3';
-window.smartsupp||(function(d) {
-  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-  c.type='text/javascript';c.charset='utf-8';c.async=true;
-  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-})(document);
-</script>
-<script>
-
-	follower = document.getElementById('follower')
-printout = document.getElementById('printout')
-
-mouseX = (event) =>
-  return event.clientX
-
-mouseY = (event) =>
-  return event.clientY
-
-positionElement = (event) =>
-  mouse = {
-    x: mouseX(event)
-    y: mouseY(event)
-  }
-  follower.style.top = mouse.y + 'px'
-  follower.style.left = mouse.x + 'px'
-
-timer = false
-window.onmousemove = init = (event) =>
-  _event = event
-  timer = setTimeout =>
-    positionElement(_event)
-  , 1
-</script>
-<script>
-var noBots = require('express-nobots');
-
-// must be the first middleware
-app.use(noBots());
-</script>
 
 
-<script>
-document.addEventListener("contextmenu", function(e){
-e.preventDefault();
-}, false);
-</script>
-<script language=javascript>
-    var rev = "fwd";
-    function titlebar(val){
-        var msg  = "FN-Wave.store";
-        var res = " ";
-        var speed = 70;
-        var pos = val;
-        msg = "   "+msg+"|2018-2021";
-        var le = msg.length;
-        if(rev == "fwd"){
-            if(pos < le){
-                pos = pos+1;
-                scroll = msg.substr(0,pos);
-                document.title = scroll;
-                timer = window.setTimeout("titlebar("+pos+")",speed);
-            }
-            else {
-                rev = "bwd";
-                timer = window.setTimeout("titlebar("+pos+")",speed);
-            }
-        }
-        else {
-            if(pos > 0) {
-                pos = pos-1;
-                var ale = le-pos;
-                scrol = msg.substr(ale,le);
-                document.title = scrol;
-                timer = window.setTimeout("titlebar("+pos+")",speed);
-            }
-            else {
-                rev = "fwd";
-                timer = window.setTimeout("titlebar("+pos+")",speed);
-            }
-        }
-    }
-    titlebar(0);
-</script>
+
+
+
+
 
 
 <script>
@@ -348,20 +267,7 @@ window.onload = function () {
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  	<script src="devtools-detect/index.js" type="text/javascript"></script>
-	<script type="module">
-    window.addEventListener('devtoolschange', event => {
- 
-    window.location.href = "https://iplogger.org/2FAeJ5";
-    function windowClose() {
-    window.open('','_parent','');
-    window.close();
-    }
 
-    });
-	</script> 
 <script>
 	function togglePopup(){
   document.getElementById("popup-0").classList.toggle("active");
